@@ -18,9 +18,14 @@ zeta = 1;
 limit = 2;
 
 % 被控对象参数（nominal）
-a0=10;
-b0=1;
-c0=10;
+g0 = 9.8; % acceleration due to gravity
+l = 1; % length
+k0 = 0.02; % coefficient of friction
+m = 0.1; % mass
+
+a0 = g0/l;
+b0 = k0/m;
+c0 = 1/(m*l^2);
 
 % 被控对象参数（perturbed）
 a = a0;
