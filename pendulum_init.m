@@ -4,11 +4,11 @@ ToDeg = 180/pi;
 ToRad = pi/180;
 
 % 初始值
-delta_init = 0;
+delta_init = pi/4;
 delta_dot_init = 0;
 
 % 目标值
-delta = pi/2;
+delta = pi;
 
 % 参考信号模型参数
 w_n = 4;
@@ -18,10 +18,10 @@ zeta = 1;
 limit = 2;
 
 % 被控对象参数（nominal）
-g0 = 9.8; % acceleration due to gravity
-l = 1; % length
+g0 = 9.81; % acceleration due to gravity
+l = 1.05; % length
 k0 = 0.02; % coefficient of friction
-m = 0.1; % mass
+m = 0.15; % mass
 
 a0 = g0/l;
 b0 = k0/m;
